@@ -2,9 +2,9 @@
 
 class Student {
     //Propriété de l'objet
-    public string $firstname;
-    public int $age;
-    protected string $id;
+    public ?string $firstname;
+    public ?int $age;
+    protected ?string $id;
 
     // méthodes de l'objet
     public function __construct(?string $firstname, ?int $age) {

@@ -3,7 +3,7 @@
 
  $student = new Student("Billy", 19);
  $student2 = new Student("Marie", 22);
-//  $student3 = new Student();
+ $student3 = new Student(null, null);
 
 //  $student->firstname = "Billy";
 //  $student->age = 19;
