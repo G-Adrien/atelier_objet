@@ -18,7 +18,16 @@ $student->setAge(27);
 var_dump($student);
 
 //Exercice 2
-echo"<h3>Exercice 2</h3>";
+echo"<h3>Exercice aaa 2</h3>";
 
+$student = new Student();
 
+try{
+    $student->setName("aaa");
+    $student->setAge(1250);
+}
+catch(\Exception $e){
+    echo $e->getMessage();
+}
+var_dump($student);
 ?>
