@@ -30,7 +30,11 @@ $customer->name = strtoupper($customer->name);
 $customer->firstname = strtoupper($customer->firstname);
 $customer->payments[] = "cash";
 var_dump($customer);
-echo "<br>";
+echo "<br><br>";
 echo $customer->firstname . " " . $customer->name . " is " . $customer->age . " years old.<br>";
+echo "He has the following means of payement : <br>";
+foreach ($customer->payments as $payment){
+    echo "- $payment <br>";
 
+}
 ?>

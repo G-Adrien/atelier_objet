@@ -14,8 +14,11 @@
 $student->setId("azerty123");
 
  var_dump($student);
- var_dump($student2);
+//  var_dump($student2);
 //  var_dump($student3);
 
 echo "<p>$student->firstname : " . $student->getId() . "</p>";
+echo "<p>Base code : " . Student::$base . "</p>";
+Student::setBase("21");
+echo"<p>Valeur max : " . Student::MAX ."</p>"
 ?>
