@@ -18,7 +18,7 @@ $student->setAge(27);
 var_dump($student);
 
 //Exercice 2
-echo"<h3>Exercice aaa 2</h3>";
+echo"<h3>Exercice 2</h3>";
 
 $student = new Student();
 
@@ -30,4 +30,23 @@ catch(\Exception $e){
     echo $e->getMessage();
 }
 var_dump($student);
+
+
+//Exercice 3
+echo"<h3>Exercice 3</h3>";
+require "book.php";
+
+$data = [
+    "title" => "The rain",
+    "pages" => 246,
+  ];
+  
+try{
+    $book = new Book($data);
+}
+catch(\Exception $e){
+    echo $e->getMessage();
+}
+echo "<br>" . $book->getTitle() . " has " . $book->getPages() . " pages";
+
 ?>
