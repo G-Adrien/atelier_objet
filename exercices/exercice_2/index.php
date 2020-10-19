@@ -8,7 +8,7 @@ $data = [
     "department" => "Seine-Maritime"
 ];
 
-$city = new City("Rouen", "Seine-Maritime");
+$city = new City($data);
   
 try{
     echo $city->showLocation();

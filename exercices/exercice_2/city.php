@@ -24,11 +24,15 @@
 
         }
 
-        public function __construct(string $name, string $department){
-            echo $this->setName($name);
-            echo $this->setDepartment($department);
+        public function __construct(array $data){
+            echo $this->setName($data["name"]);
+            echo $this->setDepartment($data["department"]);
         }
 
+        // public function __construct(string $name, string $department){
+        //     echo $this->setName($name);
+        //     echo $this->setDepartment($department);
+        // }
 
 
     }

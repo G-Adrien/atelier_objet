@@ -6,22 +6,22 @@
         protected string $department;
         // méthode de l'objet
         
-        protected function setName(string $name){
+        public function setName(string $name){
             $this->name = $name;
         }
-        protected function getName(string $name){
+        public function getName(string $name){
             return $this->name = $name;
         }
 
-        protected function setDepartment(string $department){
+        public function setDepartment(string $department){
             $this->department = $department;
         }
-        protected function getDepartment(string $department){
+        public function getDepartment(string $department){
             return $this->department = $department;
         }
         
-        public function showLocation(string $name, string $department){
-           return "la ville $name est dans le département $department ";
+        public function showLocation(){
+           return "la ville $this->name est dans le département $this->department ";
         }
 
 

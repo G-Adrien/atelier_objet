@@ -20,30 +20,27 @@
         }
 
         public function getName():string{
-            return $this->name = $name;
+            return $this->name;
         }
 
         public function getFirstname():string{
-            return $this->firstname = $firstname; 
+            return $this->firstname; 
         }
 
         public function getAddress():string{
-            return $this->address = $address; 
+            return $this->address; 
         }
 
         public function getCoord():string{
-            return $this->firstname . " " . $this->name . "habite au" . $this->address . ".";
+            return $this->firstname . " " . $this->name . " habite au " . $this->address . ".";
         }
 
-        public function hydrate(array $data) {
-            foreach ($data as $key => $value) {
-              $methode = "set". ucfirst($key);
-              $this->$methode($value);
-            }
-        }
+        
 
-        public function __constructor(array $data){
-           $this->hydrate($data);
+        public function __construct(array $data){
+           $this->setName($data["name"]);
+           $this->setFirstname($data["firstname"]);
+           $this->setAddress($data["address"]);
         }
 
     }
